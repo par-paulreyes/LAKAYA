@@ -49,7 +49,7 @@ Have you ever considered the journey our seafood takes before it reaches your ta
         <td><strong>SDG 12 (Responsible Consumption and Production):</strong> Encourages sustainable seafood consumption to minimize environmental impact.</td>
     </tr>
     <tr>
-        <th><img src="https://i.ibb.co/D75FzYw/8-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
+        <th><img src="https://i.ibb.co/NWDY12T/e-gif-14.gif" width=180 height=180/></th>
         <td><strong>SDG 14 (Life Below Water):</strong> Promotes the protection of marine life through sustainable fishing practices.</td>
     </tr>
 </table>
