@@ -124,33 +124,34 @@ Reyes, Paul Alexis J.
 <div align="center">
 <table>
 	<tr>
-		<th valign="middle"><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/></th>
-        <td valign="middle">
-            <div align="left"><strong>💡 Mary Kristine A. De Jose</strong><br>
-                ➟ dynamite with a laser beam (she/her)<br>
-                ➟ ISTP<br>
-                ➟ Gemini<br>
-                ➟ 22-03865@g.batstate-u.edu.ph
-            </div>
-        </td>
-        <th valign="middle"><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/></th>
-        <td valign="middle">
-            <div align="left"><strong>💡 Mary Kristine A. De Jose</strong><br>
-                ➟ dynamite with a laser beam (she/her)<br>
-                ➟ ISTP<br>
-                ➟ Gemini<br>
-                ➟ 22-03865@g.batstate-u.edu.ph
-            </div>
-        </td>
-        <th valign="middle"><img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="80" height="75"/></th>
-        <td valign="middle">
-            <div align="left"><strong>💡 Paul Alexis J. Reyes</strong><br>
-                ➟ Kinemaster cracked (he/him)<br>
-                ➟ INTP<br>
-                ➟ Cancer<br>
-                ➟ 22-00869@g.batstate-u.edu.ph
-            </div>
-        </td>
+		<td align="center" valign="middle">
+			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/><br>
+            <strong>💡 Mary Kristine A. De Jose</strong><br>
+            ➟ dynamite with a laser beam (she/her)<br>
+            ➟ ISTP<br>
+            ➟ Gemini<br>
+            ➟ 22-03865@g.batstate-u.edu.ph
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="middle">
+			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/><br>
+            <strong>💡 Mary Kristine A. De Jose</strong><br>
+            ➟ dynamite with a laser beam (she/her)<br>
+            ➟ ISTP<br>
+            ➟ Gemini<br>
+            ➟ 22-03865@g.batstate-u.edu.ph
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="middle">
+			<img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="80" height="75"/><br>
+            <strong>💡 Paul Alexis J. Reyes</strong><br>
+            ➟ Kinemaster cracked (he/him)<br>
+            ➟ INTP<br>
+            ➟ Cancer<br>
+            ➟ 22-00869@g.batstate-u.edu.ph
+		</td>
 	</tr>
 </table>
 </div>
