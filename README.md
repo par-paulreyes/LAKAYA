@@ -17,7 +17,9 @@
 ### <a name="introduction"></a>
 ## Introduction 🌊
 <div align="justify">
-Have you ever considered the journey our seafood takes before it reaches your table? In a world where sustainability is becoming increasingly critical, every choice matters. Welcome to ***LAKAYA***, an interactive website dedicated to connecting users with nearby markets for eco-conscious fish purchases. Inspired by Google Maps, ***LAKAYA*** empowers users to explore a wide variety of fish species, view detailed descriptions and prices, and locate the closest market. With efficient search and routing algorithms, including Dijkstra's for optimal route-finding and the knapsack algorithm for optimizing purchase quantities, this platform offers a streamlined experience that aligns with responsible consumption and sustainable fishing practices.
+	
+Have you ever considered our seafood's journey before it reaches your table? In a world where sustainability is becoming increasingly critical, every choice matters. Welcome to **LAKAYA**, an interactive website connecting users with nearby markets for eco-conscious fish purchases. Inspired by Google Maps, **LAKAYA** empowers users to explore various fish species, view detailed descriptions and prices, and locate the closest market. With efficient search and routing algorithms, including Dijkstra's for optimal route-finding and the knapsack algorithm for optimizing purchase quantities, this platform offers a streamlined experience that aligns with responsible consumption and sustainable fishing practices.
+
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
@@ -25,14 +27,15 @@ Have you ever considered the journey our seafood takes before it reaches your ta
 ### <a name="features"></a>
 ## Features 🌐
 <div align="justify">
-🔹 <strong> Efficient Search and Navigation:</strong>strong> Find fish species quickly and explore nearby markets based on your location.<br>
-🔹 <strong> Shortest Route Calculation:</strong> Dijkstra’s algorithm calculates the optimal path to each market, saving you time and reducing your carbon footprint.<br>
-🔹 <strong> Quantity Optimization:</strong> The knapsack algorithm helps prioritize market capacity, ensuring sustainable purchasing.<br>
-🔹 <strong> Market Reservations:</strong> Conveniently reserve a time and date for market visits or pickups.<br>
-🔹 <strong> Detailed Product Information:</strong> View descriptions, prices, and availability for each fish species, promoting informed and responsible choices.<br>
-🔹 <strong> User-Friendly Interface:</strong> Intuitive design inspired by Google Maps for easy navigation and interaction.<br>
-🔹 <strong> Real-Time Updates:</strong> Get the latest information on market availability and fish stock to make timely decisions.<br>
-🔹 <strong> Sustainability Insights:</strong> Access data and insights on sustainable fishing practices and marine biodiversity.
+	
+🔹 **Efficient Search and Navigation:** Find fish species quickly and explore nearby markets based on your location.<br>
+🔹 **Shortest Route Calculation:** Dijkstra’s algorithm calculates the optimal path to each market, saving you time and reducing your carbon footprint.<br>
+🔹 **Quantity Optimization:** The knapsack algorithm helps prioritize market capacity, ensuring sustainable purchasing.<br>
+🔹 **Market Reservations:** Conveniently reserve a time and date for market visits or pickups.<br>
+🔹 **Detailed Product Information:** View descriptions, prices, and availability for each fish species, promoting informed and responsible choices.<br>
+🔹 **User-Friendly Interface:** Intuitive design inspired by Google Maps for easy navigation and interaction.<br>
+🔹 **Real-Time Updates:** Get the latest information on market availability and fish stock to make timely decisions.<br>
+🔹 **Sustainability Insights:** Access data and insights on sustainable fishing practices and marine biodiversity.
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
@@ -40,6 +43,7 @@ Have you ever considered the journey our seafood takes before it reaches your ta
 ### <a name="purpose"></a>
 ## Purpose 🌍
 <div align="justify">
+	
 **LAKAYA** contributes to the United Nations Sustainable Development Goals (SDGs) by fostering awareness of sustainable fishing and marine biodiversity. Specifically, it supports:
 
 <br>
