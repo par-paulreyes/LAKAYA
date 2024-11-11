@@ -151,7 +151,6 @@ Reyes, Paul Alexis J.
                 ➟ 22-00869@g.batstate-u.edu.ph
             </div>
         </td>
-	    <th><img src="https://i.ibb.co/MGG0t3G/image.png" width="100" height="100"/></th>
     </tr>
 </table>
 
