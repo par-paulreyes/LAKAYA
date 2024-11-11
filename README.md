@@ -124,7 +124,7 @@ Reyes, Paul Alexis J.
 <div align="center">
 <table>
 	<tr>
-        <td><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/></td>
+        <tr><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/></tr>
         <td>
             <div align="left"><strong>💡 Mary Kristine A. De Jose</strong><br>
                 ➟ dynamite with a laser beam (she/her)<br>
