@@ -79,82 +79,54 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 	
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
-### <a name="members"></a>
-## Member Portfolio 💅
-<p align="center"><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="200" height="200" />
-<p align="center">
-De Jose, Mary Kristine A. 
-<ul>
-  	<li>Frontend Developer </li>
-	<li> Dynamite with a laser beam (she/her) </li>
-	<li>ISTP</li>
-	<li>Gemini</li>
-	<li>22-03865@g.batstate-u.edu.ph</li>
-</ul>
-</p>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
-<p align="center"><img src="https://i.ibb.co/0y8tDxG/400157860-725047402815272-7964848878070784083-n.jpg" width="200" height="200" />
-<p align="center">
-Eduria, Nhiel G. 
-<ul>
-  	<li>Backend Developer </li>
-	<li>Silent Killer(he/him) </li>
-	<li>Unknown</li>
-	<li>Pisces</li>
-	<li>22-05319@g.batstate-u.edu.ph</li>
-</ul>
-</p>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
-<p align="center"><img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="200" height="200" />
-<p align="center">
-Reyes, Paul Alexis J. 
-<ul>
-	<li>Fullstack Developer </li>
-	<li>kinemaster cracked (he/him) </li>
-	<li>INTP</li>
-	<li>Cancer</li>
-	<li>22-00869@g.batstate-u.edu.ph</li>
-</ul>
-</p>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
+<h2 align="center">Member Portfolio 💅</h2>
 
-
-### <a name="members"></a>
-## :shipit: Member Portfolio
-<div align="center">
-<table style="width:80%; border-collapse:collapse;">
-    <tr>
-        <th valign="middle" style="width:10%; padding:5px;">
-            <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/>
-        </th>
-        <td valign="middle" style="width:40%; padding:5px;">
-            <strong>💡 Mary Kristine A. De Jose</strong><br>
-            ➟ dynamite with a laser beam (she/her)<br>
-            ➟ ISTP<br>
-            ➟ Gemini<br>
-            ➟ 22-03865@g.batstate-u.edu.ph
-        </td>
-        <th valign="middle" style="width:10%; padding:5px;">
-            <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/>
-        </th>
-        <td valign="middle" style="width:40%; padding:5px;">
-            <strong>💡 Mary Kristine A. De Jose</strong><br>
-            ➟ dynamite with a laser beam (she/her)<br>
-            ➟ ISTP<br>
-            ➟ Gemini<br>
-            ➟ 22-03865@g.batstate-u.edu.ph
-        </td>
-        <th valign="middle" style="width:10%; padding:5px;">
-            <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="80" height="75"/>
-        </th>
-        <td valign="middle" style="width:40%; padding:5px;">
-            <strong>💡 Paul Alexis J. Reyes</strong><br>
-            ➟ Kinemaster cracked (he/him)<br>
-            ➟ INTP<br>
-            ➟ Cancer<br>
-            ➟ 22-00869@g.batstate-u.edu.ph
-        </td>
-    </tr>
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <td>
+      <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="150" height="150" style="vertical-align: middle;">
+    </td>
+    <td>
+      <b>De Jose, Mary Kristine A.</b><br>
+      <ul>
+        <li>Frontend Developer</li>
+        <li>Dynamite with a laser beam (she/her)</li>
+        <li>ISTP</li>
+        <li>Gemini</li>
+        <li>22-03865@g.batstate-u.edu.ph</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
+    </td>
+    <td>
+      <b>Eduria, Nhiel G.</b><br>
+      <ul>
+        <li>Backend Developer</li>
+        <li>Silent Killer (he/him)</li>
+        <li>Unknown</li>
+        <li>Pisces</li>
+        <li>22-05319@g.batstate-u.edu.ph</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
+    </td>
+    <td>
+      <b>Reyes, Paul Alexis J.</b><br>
+      <ul>
+        <li>Fullstack Developer</li>
+        <li>kinemaster cracked (he/him)</li>
+        <li>INTP</li>
+        <li>Cancer</li>
+        <li>22-00869@g.batstate-u.edu.ph</li>
+      </ul>
+    </td>
+  </tr>
 </table>
-</div>
+
 
