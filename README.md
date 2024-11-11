@@ -17,7 +17,7 @@
 ### <a name="introduction"></a>
 ## Introduction 🌊
 <div align="justify">
-Have you ever considered the journey our seafood takes before it reaches your table? In a world where sustainability is becoming increasingly critical, every choice matters. Welcome to **LAKAYA**, an interactive website dedicated to connecting users with nearby markets for eco-conscious fish purchases. Inspired by Google Maps, **LAKAYA** empowers users to explore a wide variety of fish species, view detailed descriptions and prices, and locate the closest market. With efficient search and routing algorithms, including Dijkstra's for optimal route-finding and the knapsack algorithm for optimizing purchase quantities, this platform offers a streamlined experience that aligns with responsible consumption and sustainable fishing practices.
+Have you ever considered the journey our seafood takes before it reaches your table? In a world where sustainability is becoming increasingly critical, every choice matters. Welcome to ***LAKAYA***, an interactive website dedicated to connecting users with nearby markets for eco-conscious fish purchases. Inspired by Google Maps, ***LAKAYA*** empowers users to explore a wide variety of fish species, view detailed descriptions and prices, and locate the closest market. With efficient search and routing algorithms, including Dijkstra's for optimal route-finding and the knapsack algorithm for optimizing purchase quantities, this platform offers a streamlined experience that aligns with responsible consumption and sustainable fishing practices.
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
@@ -77,7 +77,6 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 
 ### <a name="members"></a>
 ## Member Portfolio 💅
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 <p align="center"><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="200" height="200" />
 <p align="center">
 De Jose, Mary Kristine A. 
