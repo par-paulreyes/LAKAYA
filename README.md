@@ -122,37 +122,39 @@ Reyes, Paul Alexis J.
 ### <a name="members"></a>
 ## :shipit: Member Portfolio
 <div align="center">
-<table>
-	<tr>
-		<td align="center" valign="middle">
-			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="100" height="95"/><br>
+<table style="width:80%; border-collapse:collapse;">
+    <tr>
+        <th valign="middle" style="width:10%; padding:5px;">
+            <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/>
+        </th>
+        <td valign="middle" style="width:40%; padding:5px;">
             <strong>💡 Mary Kristine A. De Jose</strong><br>
             ➟ dynamite with a laser beam (she/her)<br>
             ➟ ISTP<br>
             ➟ Gemini<br>
             ➟ 22-03865@g.batstate-u.edu.ph
-		</td>
-	</tr>
-	<tr>
-		<td align="center" valign="middle">
-			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="100" height="95"/><br>
+        </td>
+        <th valign="middle" style="width:10%; padding:5px;">
+            <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/>
+        </th>
+        <td valign="middle" style="width:40%; padding:5px;">
             <strong>💡 Mary Kristine A. De Jose</strong><br>
             ➟ dynamite with a laser beam (she/her)<br>
             ➟ ISTP<br>
             ➟ Gemini<br>
             ➟ 22-03865@g.batstate-u.edu.ph
-		</td>
-	</tr>
-	<tr>
-		<td align="center" valign="middle">
-			<img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="100" height="95"/><br>
+        </td>
+        <th valign="middle" style="width:10%; padding:5px;">
+            <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="80" height="75"/>
+        </th>
+        <td valign="middle" style="width:40%; padding:5px;">
             <strong>💡 Paul Alexis J. Reyes</strong><br>
             ➟ Kinemaster cracked (he/him)<br>
             ➟ INTP<br>
             ➟ Cancer<br>
             ➟ 22-00869@g.batstate-u.edu.ph
-		</td>
-	</tr>
+        </td>
+    </tr>
 </table>
 </div>
 
