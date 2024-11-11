@@ -1,7 +1,4 @@
-<p align="center">
-    <img src="https://i.ibb.co/j6zC0X3/ezgif-4-241998eeff.gif" height="100" width="90"/> &nbsp; &nbsp;
-    <img src="https://i.ibb.co/1b7syj4/8fbde1eefb01a339aa88ecb27fcf0fa8.png" height="80" width="400"/><br><br>
-</p>
+#LAKAYA
 
 ## Contents 🪓
 - [Introduction](#introduction)
