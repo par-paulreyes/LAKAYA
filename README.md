@@ -4,11 +4,10 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Purpose](#purpose)
+- [Website Demo](#demo)
 - [Prerequisites](#prereqs)
-- [Gameplay](#game)
 - [Video Presentation](#video)
 - [Member Portfolio](#members)
-- [Game Demo](#demo)
 
 ### <a name="introduction"></a>
 ## Introduction 🌊
