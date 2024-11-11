@@ -124,18 +124,6 @@ Reyes, Paul Alexis J.
 <div align="center">
 <table>
 	<tr>
-        <th><img src="https://i.ibb.co/jLSS1Gr/387328927-1112705976772427-8860459638482587988-n-removebg-preview.png" width="100" height="90"/></th>
-        <td>
-            <div align="left"><strong>💡 Jaron Louise Arquillo</strong><br>
-                ➟ 1HP Remaining (he/him)<br>
-                ➟ INTJ<br>
-                ➟ Capricorn<br>
-                ➟ 22-03531@g.batstate-u.edu.ph
-            </div>
-        </td>
-        <th><img src="https://i.ibb.co/0y8tDxG/400157860-725047402815272-7964848878070784083-n.jpg" width="100" height="100"/></th>
-    </tr>
-	<tr>
         <th><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="100" height="95"/></th>
         <td>
             <div align="left"><strong>💡 Mary Kristine A. De Jose</strong><br>
@@ -145,9 +133,15 @@ Reyes, Paul Alexis J.
                 ➟ 22-03865@g.batstate-u.edu.ph
             </div>
         </td>
-        <th><img src="https://i.ibb.co/89SnmNY/image-removebg-preview-8.png" width="100" height="90"/></th>
-    </tr>
-    <tr>
+        <th><img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="100" height="95"/></th>
+        <td>
+            <div align="left"><strong>💡 Mary Kristine A. De Jose</strong><br>
+                ➟ dynamite with a laser beam (she/her)<br>
+                ➟ ISTP<br>
+                ➟ Gemini<br>
+                ➟ 22-03865@g.batstate-u.edu.ph
+            </div>
+        </td>
         <th><img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="100" height="95"/></th>
         <td>
             <div align="left"><strong>💡 Paul Alexis J. Reyes</strong><br>
