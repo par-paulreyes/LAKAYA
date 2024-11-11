@@ -125,7 +125,7 @@ Reyes, Paul Alexis J.
 <table>
 	<tr>
 		<td align="center" valign="middle">
-			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/><br>
+			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="100" height="95"/><br>
             <strong>💡 Mary Kristine A. De Jose</strong><br>
             ➟ dynamite with a laser beam (she/her)<br>
             ➟ ISTP<br>
@@ -135,7 +135,7 @@ Reyes, Paul Alexis J.
 	</tr>
 	<tr>
 		<td align="center" valign="middle">
-			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="80" height="75"/><br>
+			<img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="100" height="95"/><br>
             <strong>💡 Mary Kristine A. De Jose</strong><br>
             ➟ dynamite with a laser beam (she/her)<br>
             ➟ ISTP<br>
@@ -145,7 +145,7 @@ Reyes, Paul Alexis J.
 	</tr>
 	<tr>
 		<td align="center" valign="middle">
-			<img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="80" height="75"/><br>
+			<img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="100" height="95"/><br>
             <strong>💡 Paul Alexis J. Reyes</strong><br>
             ➟ Kinemaster cracked (he/him)<br>
             ➟ INTP<br>
