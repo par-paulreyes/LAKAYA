@@ -1,6 +1,6 @@
 # LAKAYA
 
-## Contents 🪓
+## Contents 🐠
 - [Introduction](#introduction)
 - [Features](#features)
 - [Purpose](#purpose)
@@ -20,14 +20,14 @@ Have you ever considered the journey our seafood takes before it reaches your ta
 ### <a name="features"></a>
 ## Features 🌐
 <div align="justify">
-🔹 **Efficient Search and Navigation:** Find fish species quickly and explore nearby markets based on your location.<br>
-🔹 **Shortest Route Calculation:** Dijkstra’s algorithm calculates the optimal path to each market, saving you time and reducing your carbon footprint.<br>
-🔹 **Quantity Optimization:** The knapsack algorithm helps prioritize market capacity, ensuring sustainable purchasing.<br>
-🔹 **Market Reservations:** Conveniently reserve a time and date for market visits or pickups.<br>
-🔹 **Detailed Product Information:** View descriptions, prices, and availability for each fish species, promoting informed and responsible choices.<br>
-🔹 **User-Friendly Interface:** Intuitive design inspired by Google Maps for easy navigation and interaction.<br>
-🔹 **Real-Time Updates:** Get the latest information on market availability and fish stock to make timely decisions.<br>
-🔹 **Sustainability Insights:** Access data and insights on sustainable fishing practices and marine biodiversity.
+🔹 <strong> Efficient Search and Navigation:</strong>strong> Find fish species quickly and explore nearby markets based on your location.<br>
+🔹 <strong> Shortest Route Calculation:</strong> Dijkstra’s algorithm calculates the optimal path to each market, saving you time and reducing your carbon footprint.<br>
+🔹 <strong> Quantity Optimization:</strong> The knapsack algorithm helps prioritize market capacity, ensuring sustainable purchasing.<br>
+🔹 <strong> Market Reservations:</strong> Conveniently reserve a time and date for market visits or pickups.<br>
+🔹 <strong> Detailed Product Information:</strong> View descriptions, prices, and availability for each fish species, promoting informed and responsible choices.<br>
+🔹 <strong> User-Friendly Interface:</strong> Intuitive design inspired by Google Maps for easy navigation and interaction.<br>
+🔹 <strong> Real-Time Updates:</strong> Get the latest information on market availability and fish stock to make timely decisions.<br>
+🔹 <strong> Sustainability Insights:</strong> Access data and insights on sustainable fishing practices and marine biodiversity.
 </div>
 
 ---
@@ -54,14 +54,14 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 </div>
 
 ### <a name="prereqs"></a>
-## Prerequisites 👻
+## Prerequisites ⚓
 🔻***Install PyMySQL*** : 
 <pre><code>pip install PyMySQL</code></pre>
 	
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
 ### <a name="demo"></a>
-## Website Demo 🦇
+## Website Demo 🚢
 
 <div align="center">
 <a href="https://www.youtube.com/watch?v=pVdu-sCM3twcan">
@@ -72,7 +72,7 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 
 ### <a name="members"></a>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
-## Member Portfolio ☠️
+## Member Portfolio 💅
 <!-- Your member portfolio content here -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
@@ -81,7 +81,7 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 <p align="center">
 De Jose, Mary Kristine A. 
 <ul>
-  <li>Frontend Developer </li>
+  	<li>Frontend Developer </li>
 	<li> Dynamite with a laser beam (she/her) </li>
 	<li>ISTP</li>
 	<li>Gemini</li>
@@ -93,7 +93,7 @@ De Jose, Mary Kristine A.
 <p align="center">
 Eduria, Nhiel G. 
 <ul>
-  <li>Backend Developer </li>
+  	<li>Backend Developer </li>
 	<li>Silent Killer(he/him) </li>
 	<li>Unknown</li>
 	<li>Pisces</li>
@@ -105,6 +105,7 @@ Eduria, Nhiel G.
 <p align="center">
 Reyes, Paul Alexis J. 
 <ul>
+	<li>Fullstack Developer </li>
 	<li>kinemaster cracked (he/him) </li>
 	<li>INTP</li>
 	<li>Cancer</li>
