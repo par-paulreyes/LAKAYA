@@ -1,4 +1,4 @@
-#LAKAYA
+# LAKAYA
 
 ## Contents 🪓
 - [Introduction](#introduction)
