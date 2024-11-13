@@ -60,6 +60,8 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 By connecting users with responsibly sourced seafood and helping optimize their purchasing choices, **LAKAYA** stands as a testament to eco-friendly and responsible marine resource management.
 </div>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
+
 ### <a name="prereqs"></a>
 ## Prerequisites ⚓
 🔻***Install PyMySQL*** : 
@@ -73,11 +75,13 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   <tr>
     <td>
       <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="150" height="150" style="vertical-align: middle;">
-	    <li>Frontend Developer</li>
     </td>
+	  <td>
+		  <h5 align ="center">Frontend Developer</h5>
+		  <h3 align="center">De Jose, Mary Kristine</h3>
+	  </td>
     <td>
       <ul>
-	<b align="center">De Jose, Mary Kristine A.</b><br>
         <li>Dynamite with a laser beam (she/her)</li>
         <li>ISTP</li>
         <li>Gemini</li>
@@ -88,11 +92,13 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   <tr>
     <td>
       <img src="https://i.ibb.co/s2X13CG/photo.png" width="150" height="150" style="vertical-align: middle;">
-	    <li>Backend Developer</li>
     </td>
+	  <td>
+		  <h5 align ="center">Backend Developer</h5>
+		  <h3 align="center">Eduria, Nhiel G.</h3>
+	  </td>
     <td>
       <ul>
-	<b align="center">Eduria, Nhiel G.</b><br>
         <li>Silent Killer (he/him)</li>
         <li>Unknown</li>
         <li>Pisces</li>
@@ -102,12 +108,14 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   </tr>
   <tr>
     <td>
-      <img src="https://i.ibb.co/NWdZgqb/Untitled-design-1.png" width="150" height="150" style="vertical-align: middle;">
-	    <li>Fullstack Developer</li>
+      <img src="https://i.ibb.co/NWdZgqb/Untitled-design-1.png" width="150" height="150" style="vertical-align: middle;"><br>
     </td>
+	  <td>
+		  <h5 align ="center">Fullstack Developer</h5>
+		  <h3 align="center">Reyes, Paul Alexis J.</h3>
+	  </td>
     <td>
       <ul>
-	<b align="center">Reyes, Paul Alexis J.</b><br>
         <li>kinemaster cracked (he/him)</li>
         <li>INTP</li>
         <li>Cancer</li>
