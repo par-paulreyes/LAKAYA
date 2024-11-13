@@ -102,7 +102,7 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   </tr>
   <tr>
     <td>
-      <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
+      <img src="https://i.ibb.co/NWdZgqb/Untitled-design-1.png" width="150" height="150" style="vertical-align: middle;">
 	    <li>Fullstack Developer</li>
     </td>
     <td>
