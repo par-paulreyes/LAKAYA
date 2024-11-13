@@ -84,8 +84,8 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 <table align="center" border="1" cellpadding="10" cellspacing="0">
   <tr>
     <td>
+	    <b>De Jose, Mary Kristine A.</b>
       <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="150" height="150" style="vertical-align: middle;">
-	    <b>De Jose, Mary Kristine A.</b><br>
 	    <li>Frontend Developer</li>
     </td>
     <td>
@@ -99,8 +99,8 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   </tr>
   <tr>
     <td>
+	    <b>Eduria, Nhiel G.</b>
       <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
-	    <b>Eduria, Nhiel G.</b><br>
 	    <li>Backend Developer</li>
     </td>
     <td>
@@ -114,8 +114,8 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   </tr>
   <tr>
     <td>
+	    <b>Reyes, Paul Alexis J.</b>
       <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
-	    <b>Reyes, Paul Alexis J.</b><br>
 	    <li>Fullstack Developer</li>
     </td>
     <td>
