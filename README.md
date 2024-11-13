@@ -7,7 +7,6 @@
 - [Features](#features)
 - [Purpose](#purpose)
 - [Prerequisites](#prereqs)
-- [Video Presentation](#video)
 - [Member Portfolio](#members)
 
 
