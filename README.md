@@ -49,11 +49,20 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 <table>
     <tr>
         <th><img src="https://i.ibb.co/dMvB2PV/12-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
-        <td><strong>SDG 12 (Responsible Consumption and Production):</strong> Encourages sustainable seafood consumption to minimize environmental impact.</td>
+        <td><strong>SDG 12 (Responsible Consumption and Production):</strong> Provide a marketplace and investment platform that encourages sustainable fishing practices. By connecting consumers and investors with fishermen who use responsible methods, LAKAYA helps reduce overfishing and promotes eco-friendly production practices.
+
+<li>The platform’s <strong>investment rating system</strong> could highlight fishermen who follow sustainable practices, encouraging responsible fishing through visibility and increased investment potential.</li>
+<li>A filter system could allow users to search for fishermen based on their environmental impact rating, leading to more informed, sustainable choices.</li>
+<li> <strong>LAKAYA’s feedback system </strong> can also include questions about sustainable practices, allowing users to provide feedback on the environmental responsibility of fishermen they interact with.</li>
     </tr>
     <tr>
         <th><img src="https://i.ibb.co/sjCvBWn/14-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
-        <td><strong>SDG 14 (Life Below Water):</strong> Promotes the protection of marine life through sustainable fishing practices.</td>
+        <td><strong>SDG 14 (Life Below Water):</strong> This goal emphasizes the need to conserve oceans, seas, and marine resources. Since overfishing and unsustainable methods harm marine ecosystems, LAKAYA’s support for sustainable fishing practices can significantly contribute to the health of underwater ecosystems.
+
+<li> <strong>Fisherman Sustainable Rating:</strong> This rating could incorporate criteria related to the impact on marine life, such as the use of selective fishing gear that avoids bycatch or adherence to fish population replenishment methods.</li>
+<li><strong>Type of Fishing Classification:</strong> By distinguishing between Traditional and Aquaculture fishing, the platform can educate users about the environmental impacts of each and promote sustainable aquaculture when traditional methods would risk depleting certain species.</li>
+<li><strong>Investment Recommendations:</strong> LAKAYA can recommend investments in aquaculture setups that use minimal impact systems (like recirculating aquaculture systems), providing alternatives to high-impact fishing on wild populations.</li>
+</td>
     </tr>
 </table>
 
@@ -65,7 +74,7 @@ By connecting users with responsibly sourced seafood and helping optimize their 
 ### <a name="prereqs"></a>
 ## Prerequisites ⚓
 🔻***Install PyMySQL*** : 
-<pre><code>pip install PyMySQL</code></pre>
+<pre><code>pip install Node.js</code></pre>
 	
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
