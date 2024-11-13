@@ -85,11 +85,11 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   <tr>
     <td>
       <img src="https://i.ibb.co/NCqL8Wm/403629066-664455985677276-3442638710394462470-n.jpg" width="150" height="150" style="vertical-align: middle;">
+	    <li>Frontend Developer</li>
     </td>
     <td>
       <b>De Jose, Mary Kristine A.</b><br>
       <ul>
-        <li>Frontend Developer</li>
         <li>Dynamite with a laser beam (she/her)</li>
         <li>ISTP</li>
         <li>Gemini</li>
@@ -100,11 +100,11 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   <tr>
     <td>
       <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
+	    <li>Backend Developer</li>
     </td>
     <td>
       <b>Eduria, Nhiel G.</b><br>
       <ul>
-        <li>Backend Developer</li>
         <li>Silent Killer (he/him)</li>
         <li>Unknown</li>
         <li>Pisces</li>
@@ -115,11 +115,11 @@ By connecting users with responsibly sourced seafood and helping optimize their 
   <tr>
     <td>
       <img src="https://i.ibb.co/HCvmMgC/399840751-6737253069676296-2239225414771579590-n.jpg" width="150" height="150" style="vertical-align: middle;">
+	    <li>Fullstack Developer</li>
     </td>
     <td>
       <b>Reyes, Paul Alexis J.</b><br>
       <ul>
-        <li>Fullstack Developer</li>
         <li>kinemaster cracked (he/him)</li>
         <li>INTP</li>
         <li>Cancer</li>
