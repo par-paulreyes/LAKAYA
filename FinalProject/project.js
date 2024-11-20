@@ -10,13 +10,13 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { getFirestore, collection, doc, setDoc, getDoc, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, doc, setDoc, getDoc, getDocs, query, where, orderBy, limit } from 'firebase/firestore';
 import haversine from 'haversine';
 
 dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = 30065;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -52,7 +52,7 @@ const transporter = nodemailer.createTransport({
   secure: false,
   auth: {
     user: "nheileduria6@gmail.com",
-    pass: "flgpccupxpwmpjot",
+    pass: "fbzkhjxrewdfncsm",
   },
   tls: {
     rejectUnauthorized: true,
@@ -203,14 +203,16 @@ app.post('/login', async (req, res) => {
 });
 
 app.get("/search", async (req, res) => {
-  const keyword = req.query.username;
+  const keyword = req.query.username;  
   try {
     if (!keyword) {
       return res.status(400).send({ error: "Please provide a username" });
     }
 
-    const usersRef = db.collection("users");
-    const querySnapshot = await usersRef.where("username", "==", keyword).get();
+    const usersRef = collection(db, "users");
+    const q = query(usersRef, where("username", "==", keyword));
+
+    const querySnapshot = await getDocs(q);
 
     if (querySnapshot.empty) {
       return res.status(404).send({ message: "No users found" });
@@ -218,7 +220,7 @@ app.get("/search", async (req, res) => {
 
     const results = [];
     querySnapshot.forEach(doc => {
-      results.push(doc.data());
+      results.push(doc.data());  
     });
 
     res.status(200).send(results);
@@ -229,8 +231,8 @@ app.get("/search", async (req, res) => {
 
 app.get("/investment-status", async (req, res) => {
   try {
-    const usersRef = db.collection("users");
-    const querySnapshot = await usersRef.get();
+    const usersRef = collection(db, "users");
+    const querySnapshot = await getDocs(usersRef);
     
     let investorCount = 0;
     let fishermanCount = 0;
@@ -255,8 +257,8 @@ app.get("/investment-status", async (req, res) => {
 
 app.get("/recommendations", async (req, res) => {
   try {
-    const projectsRef = db.collection("projects");
-    const querySnapshot = await projectsRef.orderBy("projectedProfit", "desc").limit(5).get();
+    const projectsRef = collection(db, "projects");
+    const querySnapshot = await getDocs(query(projectsRef, orderBy("projectedProfit", "desc"), limit(5)));
 
     if (querySnapshot.empty) {
       return res.status(404).send({ message: "No recommendations found" });
@@ -273,7 +275,6 @@ app.get("/recommendations", async (req, res) => {
   }
 });
 
-
 app.post('/book-investment', async (req, res) => {
   const { investorName, fishermanName, investmentAmount, projectedProfit, visitDateTime } = req.body;
 
@@ -287,11 +288,46 @@ app.post('/book-investment', async (req, res) => {
   const result = await bookInvestment(investorId, investorName, fishermanName, investmentAmount, projectedProfit, visitDateTime);
   
   if (result.error) {
-    return res.status(500).json({ error: result.error });
+    return res.status(500).json(result);
   }
 
-  res.json({ message: result.message });
+  try {
+    const fishermanRef = query(collection(db, "users"), where("username", "==", fishermanName));
+    const fishermanSnapshot = await getDocs(fishermanRef);
+
+    if (fishermanSnapshot.empty) {
+      return res.status(404).json({ error: 'Fisherman not found' });
+    }
+
+    const fishermanDoc = fishermanSnapshot.docs[0];
+    const fishermanEmail = fishermanDoc.data().email;
+
+    if (!fishermanEmail) {
+      return res.status(404).json({ error: 'Fisherman email not found' });
+    }
+
+    const mailOptions = {
+      from: '"LAKAYA" <nheileduria6@gmail.com>',
+      to: fishermanEmail,
+      subject: 'New Investment Booking',
+      html: `
+        <h3>New Investment Booking</h3>
+        <p><strong>Investor Name:</strong> ${investorName}</p>
+        <p><strong>Investment Amount:</strong> ${investmentAmount}</p>
+        <p><strong>Projected Profit Rate:</strong> ${projectedProfit}%</p>
+        <p><strong>Visit Date and Time:</strong> ${visitDateTime}</p>
+        <p>Thank you for being part of this investment opportunity!</p>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+    res.json({ message: "Investment booked successfully! Fisherman has been notified via email." });
+  } catch (error) {
+    console.error('Error sending email to fisherman:', error);
+    res.status(500).json({ error: "Error sending email to fisherman: " + error.message });
+  }
 });
+
 
 app.get('/location', async (req, res) => {
   const startLocationName = req.query.start || 'Manila';
@@ -299,6 +335,7 @@ app.get('/location', async (req, res) => {
   try {
     const locationsSnapshot = await getDocs(collection(db, 'locations'));
     const locations = [];
+
     locationsSnapshot.forEach(doc => {
       const data = doc.data();
       locations.push({
@@ -358,6 +395,6 @@ function findShortestLocation(distances) {
   return { shortestLocation, shortestDistance };
 }
 
-http.createServer(app).listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(port, () => {
+  console.log(`Server is running on port at http://localhost:${port}`);
 });
