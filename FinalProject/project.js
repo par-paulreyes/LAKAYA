@@ -16,7 +16,7 @@ import haversine from 'haversine';
 dotenv.config();
 
 const app = express();
-const port = 30065;
+const port = 30087;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -85,6 +85,30 @@ async function bookInvestment(investorId, investorName, fishermanName, investmen
   }
 }
 
+async function getUserInvestmentStatus(userId) {
+  try {
+    const investmentsRef = collection(db, "investment");
+    const q = query(investmentsRef, where("investorId", "==", userId));
+
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+      return { message: "No investments found for this user." };
+    }
+
+    const investments = [];
+    querySnapshot.forEach(doc => {
+      investments.push(doc.data());
+    });
+
+    return investments; 
+  } catch (error) {
+    console.error("Error fetching investment status:", error);
+    return { error: "Error fetching investment status: " + error.message };
+  }
+}
+
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -101,9 +125,6 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
 });
 
-app.get('/homepage', (req, res) => {
-  res.sendFile(path.join(__dirname, 'homepage.html'));
-});
 
 app.get('/account', async (req, res) => {
   const userId = req.query.userId;
@@ -193,7 +214,7 @@ app.post('/login', async (req, res) => {
       username: userData.username,
       email: userData.email,
       role: userData.role,
-      redirectTo: '/account',
+      redirectTo: '/',
     });
 
   } catch (error) {
@@ -229,29 +250,66 @@ app.get("/search", async (req, res) => {
   }
 });
 
-app.get("/investment-status", async (req, res) => {
+app.get('/search-investment', async (req, res) => {
+  const username = req.query.username;
+
+  if (!username) {
+    return res.status(400).json({ error: 'Username is required to search for investments.' });
+  }
+
   try {
-    const usersRef = collection(db, "users");
-    const querySnapshot = await getDocs(usersRef);
-    
-    let investorCount = 0;
-    let fishermanCount = 0;
-    let sustainableFishingCount = 0;
+    const investmentsRef = collection(db, "investment");
+    const q = query(investmentsRef, where("investorName", "==", investorName));  // Assuming the 'username' is a field in the 'investment' collection
 
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+      return res.status(404).json({ message: "No investments found for this username." });
+    }
+
+    const investments = [];
     querySnapshot.forEach(doc => {
-      const user = doc.data();
-      if (user.role === "investor") investorCount++;
-      if (user.role === "fisherman") fishermanCount++;
-      if (user.role === "sustainable_fishing") sustainableFishingCount++;
+      investments.push({ 
+        ...doc.data(),
+        investmentId: doc.id  // Add investmentId to use when fetching detailed data
+      });
     });
 
-    res.status(200).send({
-      investors: investorCount,
-      fishermen: fishermanCount,
-      sustainableFishing: sustainableFishingCount
-    });
+    res.json(investments);  // Return all matching investments
   } catch (error) {
-    res.status(500).send({ error: "Error getting investment status: " + error.message });
+    console.error("Error searching investments by username:", error);
+    res.status(500).json({ error: "Error searching investments: " + error.message });
+  }
+});
+
+app.get('/investment-status', async (req, res) => {
+  const { investorName } = req.query;
+
+  if (!investorName) {
+    return res.status(400).json({ error: 'Investor name is required.' });
+  }
+
+  try {
+    // Search for the investment by investorName
+    const investmentsRef = collection(db, "investment");
+    const q = query(investmentsRef, where("investorName", "==", investorName));
+
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+      return res.status(404).json({ message: "No investments found for this investor." });
+    }
+    const investmentData = querySnapshot.docs[0].data();
+
+    res.json({
+      investmentAmount: investmentData.investmentAmount || 'N/A',
+      projectedProfit: investmentData.projectedProfit || 'N/A',
+      status: investmentData.status || 'N/A',
+    });
+
+  } catch (error) {
+    console.error('Error fetching investment status:', error);
+    res.status(500).json({ error: 'Internal server error' });
   }
 });
 
