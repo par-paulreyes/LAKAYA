@@ -9,14 +9,14 @@ import http from 'http';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, collection, doc, setDoc, getDoc, getDocs, query, where, orderBy, limit } from 'firebase/firestore';
 import haversine from 'haversine';
 
 dotenv.config();
 
 const app = express();
-const port = 30087;
+const port = 31043;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -41,7 +41,7 @@ const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.static(path.join(__dirname)));
 
@@ -51,8 +51,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "nheileduria6@gmail.com",
-    pass: "fbzkhjxrewdfncsm",
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASSWORD,
   },
   tls: {
     rejectUnauthorized: true,
@@ -113,18 +113,43 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/fishermen', (req, res) => {
-  res.sendFile(path.join(__dirname, 'fishermen.html'));
-});
-
 app.get('/register', (req, res) => {
   res.sendFile(path.join(__dirname, 'register.html'));
+});
+
+app.get('/map', (req, res) => {
+  res.sendFile(path.join(__dirname, 'mapinvestment.html'));
 });
 
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
 });
 
+app.post('/register', async (req, res) => {
+  const { email, password, username, role, latitude, longitude } = req.body;
+  
+  try {
+    const auth = getAuth(firebaseApp);
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+
+    const userId = user.uid;
+    await setDoc(doc(db, 'users', userId), {
+      username,
+      email,
+      role,
+      location: { latitude: parseFloat(latitude), longitude: parseFloat(longitude) }
+    });
+
+    res.status(201).json({
+      message: 'User created successfully',
+      userId: userId,
+    });
+  } catch (error) {
+    console.error('Error creating user:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
 
 app.get('/account', async (req, res) => {
   const userId = req.query.userId;
@@ -155,38 +180,6 @@ app.get('/account', async (req, res) => {
   }
 });
 
-app.post('/register', async (req, res) => {
-  const { username, email, password, location, role } = req.body;
-
-  try {
-    const userRecord = await firebaseAdmin.auth().createUser({
-      email,
-      password,
-      displayName: username,
-    });
-
-    const userId = userRecord.uid;
-
-    const userRef = doc(collection(db, 'users'), userId);
-
-    await setDoc(userRef, {
-      username,
-      email,
-      location,
-      role,
-      userId,
-    });
-
-    res.json({
-      message: 'Registration successful!',
-      userId: userId,  
-      redirectTo: '/login',
-    });
-  } catch (error) {
-    console.error('Error registering user:', error);
-    res.status(500).json({ message: 'Error registering user', error: error.message });
-  }
-});
 
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
@@ -223,8 +216,35 @@ app.post('/login', async (req, res) => {
   }
 });
 
+app.get('/fishermen', async (req, res) => {
+  try {
+      const fishermenRef = collection(db, 'users');
+      const q = query(fishermenRef, where('role', '==', 'Fisherman'));
+      const querySnapshot = await getDocs(q);
+
+      if (querySnapshot.empty) {
+          return res.status(404).json({ message: 'No fishermen found' });
+      }
+
+      const fishermen = [];
+      querySnapshot.forEach(doc => {
+          const data = doc.data();
+          fishermen.push({
+              username: data.username,  
+              role: data.role,
+          });
+      });
+
+      res.status(200).json(fishermen);
+  } catch (error) {
+      console.error("Error fetching fishermen:", error);
+      res.status(500).json({ error: 'Error fetching fishermen data' });
+  }
+});
+
+
 app.get("/search", async (req, res) => {
-  const keyword = req.query.username;  
+  const keyword = req.query.username;   
   try {
     if (!keyword) {
       return res.status(400).send({ error: "Please provide a username" });
