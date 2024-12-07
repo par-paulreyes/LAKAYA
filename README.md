@@ -1,7 +1,5 @@
-# LAKAYA
-
+<img src="https://i.ibb.co/f0S3kMQ/Blue-Grey-Bold-Fish-Market-Logo.png" width=1000 height=300><br>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
-
 ## Contents 🐠
 - [Introduction](#introduction)
 - [Features](#features)
@@ -26,21 +24,21 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 ## Features 🌐
 <div align="justify">
 	
-**Login/Register:** Seamless onboarding for users.<br>
-**Profile:** A personal dashboard for managing activities.<br>
-**Be a Fisherman:** A dedicated section for fishermen to register and showcase their practices.<br>
-**Map-Based Search:** Utilize location-based filtering with Haversine theory to find nearby fishermen upon entering your current location.<br>
-**Budget-Based Search:** Use the Knapsack algorithm to filter fishermen who maximize your budget, displaying the best options tailored to your needs.<br>
-**Filtered Results:** View the list of fishermen matching your search criteria, with details such as name, location, and investment cost.<br>
-**Investment Process:** After finding a fisherman, investors can proceed to the Investment Page to book visits and establish meaningful connections.<br>
-**Dashboard:** Gain insights into platform metrics, including Total users, fishermen, investors, and our cumulative sustainable impact through investments and practices.<br>
-**How It Works:** A step-by-step guide for using LAKAYA, making it easy for new users to navigate the platform and get started.<br>
-**Feedback:** Share experiences and suggestions to help us improve and foster a stronger community.<br>
-**About Us:** Learn more about LAKAYA’s mission, vision, and commitment to sustainable development.
+<li> <strong>Login/Register:</strong> Seamless onboarding for users.</li>
+<li> <strong>Profile:</strong> A personal dashboard for managing activities.</li>
+<li> <strong>Be a Fisherman:</strong> A dedicated section for fishermen to register and showcase their practices.</li>
+<li> <strong>Map-Based Search:</strong> Utilize location-based filtering with Haversine theory to find nearby fishermen upon entering your current location.</li>
+<li> <strong>Budget-Based Search:</strong> Maximize budget, using the Knapsack algorithm to filter fishermen, display the best options tailored to your needs.</li>
+<li> <strong>Filtered Results:</strong> View the list of fishermen matching your search criteria, with details such as name, location, and investment cost.</li>
+<li> <strong>Investment Process:</strong> After finding a fisherman, investors can proceed to the Investment Page to book visits.</li>
+<li> <strong>Dashboard:</strong> Gain insights into platform metrics, including Total users, fishermen, investors, and sustainable impact.</li>
+<li> <strong>How It Works:</strong> A step-by-step guide for using LAKAYA, making it easy for new users to navigate the platform and get started.</li>
+<li> <strong>Feedback:</strong> Share experiences and suggestions to help us improve and foster a stronger community.</li>
+<li> <strong>About Us:</strong> Learn more about LAKAYA’s mission, vision, and commitment to sustainable development.</li>
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
+<br><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
 ### <a name="purpose"></a>
 ## Purpose 🌍
@@ -54,30 +52,22 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 	<tr>
 		<th> <img src="https://i.ibb.co/p4ZJWYW/1-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
 		<td> <strong>SDG 1: No Poverty</strong>
-			<li> <strong>Target 1.2: </strong>Reduce at least by half the proportion of people living in poverty in all its dimensions.</li>
-		    	<li> LAKAYA enables fishermen to secure investments, increasing their income and reducing their vulnerability to economic instability.</li>
-		    	<li> <strong>Target 1.4: </strong>Ensure equal access to economic resources and opportunities.</li>
-		    	<li> By providing a platform accessible to all fishermen, regardless of location, LAKAYA creates equitable opportunities for growth and development.</li>
+			<li> <strong>Target 1.2: </strong>Reduce at least by half the proportion of people living in poverty in all its dimensions. LAKAYA enables fishermen to secure investments, increasing their income and reducing their vulnerability to economic instability.</li>
+		    	<li> <strong>Target 1.4: </strong>Ensure equal access to economic resources and opportunities. By providing a platform accessible to all fishermen, regardless of location, LAKAYA creates equitable opportunities for growth and development.</li>
 	</tr>
 	<tr>
 		<th> <img src="https://i.ibb.co/3hs1LSv/8-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
 	    	<td> <strong>SDG 8: Decent Work and Economic Growth </strong>
-			<li> <strong>Target 8.3: </strong> Promote development-oriented policies that support productive activities and decent job creation.</li>
-			<li> LAKAYA incentivizes sustainable fishing, creating productive and dignified opportunities for fishermen while fostering responsible investments.</li>
-			<li> <strong>Target 8.5: </strong> Achieve full and productive employment and decent work for all, including equal pay for work of equal value.</li>
-			<li> The platform helps fishermen gain fair compensation for their efforts by connecting them directly with socially conscious investors.</li>
-			<li> <strong>Target 8.10: </strong> Strengthen the capacity of financial institutions to encourage investment in underserved areas.</li>
-			<li> LAKAYA acts as a bridge for investments in traditionally underserved fishing communities, driving financial inclusion and local development.</li>
+			<li> <strong>Target 8.3: </strong> Promote development-oriented policies that support productive activities and decent job creation. LAKAYA incentivizes sustainable fishing, creating productive and dignified opportunities for fishermen while fostering responsible investments.</li>
+			<li> <strong>Target 8.5: </strong> Achieve full and productive employment and decent work for all, including equal pay for work of equal value. The platform helps fishermen gain fair compensation for their efforts by connecting them directly with socially conscious investors.</li>
+			<li> <strong>Target 8.10: </strong> Strengthen the capacity of financial institutions to encourage investment in underserved areas. LAKAYA acts as a bridge for investments in traditionally underserved fishing communities, driving financial inclusion and local development.</li>
 	</tr>
 	<tr>
 		<th> <img src="https://i.ibb.co/sjCvBWn/14-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
 	    	<td> <strong>SDG 14: Life Below Water </strong>
-		    	<li> <strong>Target 14.2: </strong> Sustainably manage and protect marine ecosystems to avoid significant adverse impacts.</li>
-		    	<li> By emphasizing sustainable fishing practices, LAKAYA supports the conservation of marine biodiversity and ecosystems.</li>
-		    	<li> <strong>Target 14.7: </strong> Increase the economic benefits from the sustainable use of marine resources.</li>
-		    	<li> The platform promotes aquaculture and sustainable fishing as economic drivers, benefiting coastal communities while protecting marine resources.</li>
-		    	<li> <strong>Target 14.b: </strong> Provide access for small-scale artisanal fishers to marine resources and markets.</li>
-		    	<li> LAKAYA connects small-scale fishermen to broader investment opportunities, improving their market access and visibility.</li>
+		    	<li> <strong>Target 14.2: </strong> Sustainably manage and protect marine ecosystems to avoid significant adverse impacts. By emphasizing sustainable fishing practices, LAKAYA supports the conservation of marine biodiversity and ecosystems.</li>
+		    	<li> <strong>Target 14.7: </strong> Increase the economic benefits from the sustainable use of marine resources. The platform promotes aquaculture and sustainable fishing as economic drivers, benefiting coastal communities while protecting marine resources.</li>
+		    	<li> <strong>Target 14.b: </strong> Provide access for small-scale artisanal fishers to marine resources and markets. LAKAYA connects small-scale fishermen to broader investment opportunities, improving their market access and visibility.</li>
 	    	</td>
 	</tr>
 </table>
@@ -97,6 +87,7 @@ With LAKAYA, you’re not just investing in fishing but in the future of sustain
 	
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
+### <a name="members"></a>
 <h2 align="center">Member Portfolio 💅</h2>
 
 <table align="center" border="1" cellpadding="10" cellspacing="0">
