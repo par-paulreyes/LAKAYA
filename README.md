@@ -16,7 +16,7 @@
 ## Introduction 🌊
 <div align="justify">
 	
-Have you ever considered our seafood's journey before it reaches your table? In a world where sustainability is becoming increasingly critical, every choice matters. Welcome to **LAKAYA**, an interactive website connecting users with nearby markets for eco-conscious fish purchases. Inspired by Google Maps, **LAKAYA** empowers users to explore various fish species, view detailed descriptions and prices, and locate the closest market. With efficient search and routing algorithms, including Dijkstra's for optimal route-finding and the knapsack algorithm for optimizing purchase quantities, this platform offers a streamlined experience that aligns with responsible consumption and sustainable fishing practices.
+Have you ever considered our seafood's journey before it reaches your table? In a world where sustainability is becoming increasingly critical, every choice matters. Welcome to **LAKAYA**, a groundbreaking platform connecting fishermen and investors for sustainable growth. We aim to foster collaboration that empowers local fishing communities while enabling investors to make impactful, environmentally-conscious decisions. Whether you’re a fisherman seeking investment or an investor looking to support sustainable practices, LAKAYA is your partner for creating a better future.
 
 </div>
 
@@ -26,14 +26,18 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 ## Features 🌐
 <div align="justify">
 	
-🔹 **Efficient Search and Navigation:** Find fish species quickly and explore nearby markets based on your location.<br>
-🔹 **Shortest Route Calculation:** Dijkstra’s algorithm calculates the optimal path to each market, saving you time and reducing your carbon footprint.<br>
-🔹 **Quantity Optimization:** The knapsack algorithm helps prioritize market capacity, ensuring sustainable purchasing.<br>
-🔹 **Market Reservations:** Conveniently reserve a time and date for market visits or pickups.<br>
-🔹 **Detailed Product Information:** View descriptions, prices, and availability for each fish species, promoting informed and responsible choices.<br>
-🔹 **User-Friendly Interface:** Intuitive design inspired by Google Maps for easy navigation and interaction.<br>
-🔹 **Real-Time Updates:** Get the latest information on market availability and fish stock to make timely decisions.<br>
-🔹 **Sustainability Insights:** Access data and insights on sustainable fishing practices and marine biodiversity.
+**Login/Register:** Seamless onboarding for users.<br>
+**Profile:** A personal dashboard for managing activities.<br>
+**Be a Fisherman:** A dedicated section for fishermen to register and showcase their practices.<br>
+**Map-Based Search:** Utilize location-based filtering with Haversine theory to find nearby fishermen upon entering your current location.<br>
+**Budget-Based Search:** Use the Knapsack algorithm to filter fishermen who maximize your budget, displaying the best options tailored to your needs.<br>
+**Filtered Results:** View the list of fishermen matching your search criteria, with details such as name, location, and investment cost.<br>
+**Investment Process:** After finding a fisherman, investors can proceed to the Investment Page to book visits and establish meaningful connections.<br>
+**Dashboard:** Gain insights into platform metrics, including Total users, fishermen, investors, and our cumulative sustainable impact through investments and practices.<br>
+**How It Works:** A step-by-step guide for using LAKAYA, making it easy for new users to navigate the platform and get started.<br>
+**Feedback:** Share experiences and suggestions to help us improve and foster a stronger community.<br>
+**About Us:** Learn more about LAKAYA’s mission, vision, and commitment to sustainable development.
+
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
@@ -42,39 +46,54 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 ## Purpose 🌍
 <div align="justify">
 	
-**LAKAYA** contributes to the United Nations Sustainable Development Goals (SDGs) by fostering awareness of sustainable fishing and marine biodiversity. Specifically, it supports:
+**LAKAYA** promotes sustainability in the fishing industry while fostering economic growth and equitable opportunities. Aligned with the **United Nations Sustainable Development Goals (SDGs)**, our platform specifically contributes to:
 
 <br>
 
 <table>
-    <tr>
-        <th><img src="https://i.ibb.co/dMvB2PV/12-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
-        <td><strong>SDG 12 (Responsible Consumption and Production):</strong> Provide a marketplace and investment platform that encourages sustainable fishing practices. By connecting consumers and investors with fishermen who use responsible methods, LAKAYA helps reduce overfishing and promotes eco-friendly production practices.
-
-<li>The platform’s <strong>investment rating system</strong> could highlight fishermen who follow sustainable practices, encouraging responsible fishing through visibility and increased investment potential.</li>
-<li>A filter system could allow users to search for fishermen based on their environmental impact rating, leading to more informed, sustainable choices.</li>
-<li> <strong>LAKAYA’s feedback system </strong> can also include questions about sustainable practices, allowing users to provide feedback on the environmental responsibility of fishermen they interact with.</li>
-    </tr>
-    <tr>
-        <th><img src="https://i.ibb.co/sjCvBWn/14-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
-        <td><strong>SDG 14 (Life Below Water):</strong> This goal emphasizes the need to conserve oceans, seas, and marine resources. Since overfishing and unsustainable methods harm marine ecosystems, LAKAYA’s support for sustainable fishing practices can significantly contribute to the health of underwater ecosystems.
-
-<li> <strong>Fisherman Sustainable Rating:</strong> This rating could incorporate criteria related to the impact on marine life, such as the use of selective fishing gear that avoids bycatch or adherence to fish population replenishment methods.</li>
-<li><strong>Type of Fishing Classification:</strong> By distinguishing between Traditional and Aquaculture fishing, the platform can educate users about the environmental impacts of each and promote sustainable aquaculture when traditional methods would risk depleting certain species.</li>
-<li><strong>Investment Recommendations:</strong> LAKAYA can recommend investments in aquaculture setups that use minimal impact systems (like recirculating aquaculture systems), providing alternatives to high-impact fishing on wild populations.</li>
-</td>
-    </tr>
+	<tr>
+		<th> <img src="https://i.ibb.co/dMvB2PV/12-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
+		<td> <strong>SDG 1: No Poverty</strong>
+			<li> <strong>Target 1.2: </strong>Reduce at least by half the proportion of people living in poverty in all its dimensions.</li>
+		    	<li> LAKAYA enables fishermen to secure investments, increasing their income and reducing their vulnerability to economic instability.</li>
+		    	<li> <strong>Target 1.4: </strong>Ensure equal access to economic resources and opportunities.</li>
+		    	<li> By providing a platform accessible to all fishermen, regardless of location, LAKAYA creates equitable opportunities for growth and development.</li>
+	</tr>
+	<tr>
+		<th> <img src="https://i.ibb.co/sjCvBWn/14-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
+	    	<td> <strong>SDG 8: Decent Work and Economic Growth </strong>
+			<li> <strong>Target 8.3: </strong> Promote development-oriented policies that support productive activities and decent job creation.</li>
+			<li> LAKAYA incentivizes sustainable fishing, creating productive and dignified opportunities for fishermen while fostering responsible investments.</li>
+			<li> <strong>Target 8.5: </strong> Achieve full and productive employment and decent work for all, including equal pay for work of equal value.</li>
+			<li> The platform helps fishermen gain fair compensation for their efforts by connecting them directly with socially conscious investors.</li>
+			<li> <strong>Target 8.10: </strong> Strengthen the capacity of financial institutions to encourage investment in underserved areas.</li>
+			<li> LAKAYA acts as a bridge for investments in traditionally underserved fishing communities, driving financial inclusion and local development.</li>
+	</tr>
+	<tr>
+		<th> <img src="https://i.ibb.co/sjCvBWn/14-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
+	    	<td> <strong>SDG 14: Life Below Water </strong>
+		    	<li> <strong>Target 14.2: </strong> Sustainably manage and protect marine ecosystems to avoid significant adverse impacts.</li>
+		    	<li> By emphasizing sustainable fishing practices, LAKAYA supports the conservation of marine biodiversity and ecosystems.</li>
+		    	<li> <strong>Target 14.7: </strong> Increase the economic benefits from the sustainable use of marine resources.</li>
+		    	<li> The platform promotes aquaculture and sustainable fishing as economic drivers, benefiting coastal communities while protecting marine resources.</li>
+		    	<li> <strong>Target 14.b: </strong> Provide access for small-scale artisanal fishers to marine resources and markets.</li>
+		    	<li> LAKAYA connects small-scale fishermen to broader investment opportunities, improving their market access and visibility.</li>
+	    	</td>
+	</tr>
 </table>
 
-By connecting users with responsibly sourced seafood and helping optimize their purchasing choices, **LAKAYA** stands as a testament to eco-friendly and responsible marine resource management.
+With LAKAYA, you’re not just investing in fishing but in the future of sustainable communities and marine ecosystems. Join us and become part of this transformative journey.
+
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
 ### <a name="prereqs"></a>
 ## Prerequisites ⚓
-🔻***Install PyMySQL*** : 
-<pre><code>pip install Node.js</code></pre>
+🔻***Install Modules*** : 
+<pre><code>npm install package.json</code></pre>
+🔻***Run Server*** : 
+<pre><code>node project.js</code></pre>
 	
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
