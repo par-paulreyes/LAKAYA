@@ -52,7 +52,7 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 
 <table>
 	<tr>
-		<th> <img src="https://i.ibb.co/dMvB2PV/12-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
+		<th> <img src="https://i.ibb.co/p4ZJWYW/1-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
 		<td> <strong>SDG 1: No Poverty</strong>
 			<li> <strong>Target 1.2: </strong>Reduce at least by half the proportion of people living in poverty in all its dimensions.</li>
 		    	<li> LAKAYA enables fishermen to secure investments, increasing their income and reducing their vulnerability to economic instability.</li>
@@ -60,7 +60,7 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 		    	<li> By providing a platform accessible to all fishermen, regardless of location, LAKAYA creates equitable opportunities for growth and development.</li>
 	</tr>
 	<tr>
-		<th> <img src="https://i.ibb.co/sjCvBWn/14-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
+		<th> <img src="https://i.ibb.co/3hs1LSv/8-SDG-Make-Every-Day-Count-Gifs-GDU.gif" width=180 height=180/></th>
 	    	<td> <strong>SDG 8: Decent Work and Economic Growth </strong>
 			<li> <strong>Target 8.3: </strong> Promote development-oriented policies that support productive activities and decent job creation.</li>
 			<li> LAKAYA incentivizes sustainable fishing, creating productive and dignified opportunities for fishermen while fostering responsible investments.</li>
