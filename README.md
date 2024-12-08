@@ -80,7 +80,7 @@ With LAKAYA, you’re not just investing in fishing but in the future of sustain
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
 ### <a name="architecture"></a>
-## Project Architecture 🏗️
+## Project Architecture ⛩️
 ### Overview  
 The LAKAYA platform is architected to seamlessly connect fishermen and investors through a highly interactive, scalable, and intuitive web application. It incorporates modern technologies and algorithms to ensure a robust and user-centric experience.
 
