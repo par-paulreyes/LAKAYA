@@ -108,6 +108,7 @@ profileContainer.addEventListener('scroll', () => {
        .then(response => response.json())
        .then(data => {
          allFishermen = data;
+         filterFishermen();
          displayFishermen(data);
          fetchLoginData();
        })
@@ -164,19 +165,21 @@ profileContainer.addEventListener('scroll', () => {
      window.location.href = '/investment';
  }
  
-   function geocodeLocation(location) {
-     return fetch(`https://nominatim.openstreetmap.org/search?q=${location}&format=json`)
-       .then(response => response.json())
-       .then(data => {
-         if (data.length > 0) {
-           return { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) };
-         } else {
-           throw new Error('Location not found');
-         }
-       })
-       .catch(err => console.error('Error geocoding location:', err));
-   }
- 
+ function geocodeLocation(location) {
+  const geocodeUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(location)}&format=json`;
+
+  return fetch(geocodeUrl)
+    .then(response => response.json())
+    .then(data => {
+      if (data && data.length > 0) {
+        return {
+          lat: parseFloat(data[0].lat),
+          lon: parseFloat(data[0].lon),
+        };
+      }
+      throw new Error('Location not found');
+    });
+}
    function calculateDistance(lat1, lon1, lat2, lon2) {
      const R = 6371;
      const dLat = (lat2 - lat1) * (Math.PI / 180);
@@ -228,44 +231,58 @@ profileContainer.addEventListener('scroll', () => {
  }
  
  
-   function filterFishermen() {
-     let filteredFishermen = allFishermen;
- 
-     if (locationInput.value.trim() !== "") {
-       geocodeLocation(locationInput.value)
-         .then(userLocation => {
-           currentLocation = userLocation;
-           filteredFishermen = filteredFishermen.filter(fisherman => {
-             const distance = calculateDistance(userLocation.lat, userLocation.lon, fisherman.latitude, fisherman.longitude);
-             return distance <= 500;
-           });
-           displayFishermen(filteredFishermen);
-           showFishermenOnMap(filteredFishermen);
-         })
-         .catch(() => {
-           displayFishermen([]); 
-           mapElement.style.display = 'none';
-         });
-     }
- 
-     if (usernameInput.value.trim() !== "") {
-       filteredFishermen = filteredFishermen.filter(fisherman => 
-         fisherman.username.toLowerCase().includes(usernameInput.value.toLowerCase())
-       );
-     }
- 
-     if (budgetInput.value.trim() !== "") {
-       const budget = parseFloat(budgetInput.value);
-       filteredFishermen = knapsack(filteredFishermen, budget);
-     }
- 
-     displayFishermen(filteredFishermen);
-     if (filteredFishermen.length === 0) {
-       mapElement.style.display = 'none';
-     } else {
-       showFishermenOnMap(filteredFishermen);
-     }
-   }
+ function filterFishermen() {
+  let filteredFishermen = [...allFishermen]; // Start with a copy of the original list of fishermen
+
+  // Apply location filter if the user entered a location
+  if (locationInput.value.trim() !== "") {
+    geocodeLocation(locationInput.value)
+      .then(userLocation => {
+        currentLocation = userLocation; // Update current location
+
+        // Filter fishermen based on the location
+        filteredFishermen = filteredFishermen.filter(fisherman => {
+          const distance = calculateDistance(userLocation.lat, userLocation.lon, fisherman.latitude, fisherman.longitude);
+          return distance <= 50; // Only keep fishermen within 50 km
+        });
+
+        // Now update the display
+        displayFishermen(filteredFishermen); // Update the displayed fishermen list
+        showFishermenOnMap(filteredFishermen); // Update the map with filtered fishermen
+
+      })
+      .catch(() => {
+        displayFishermen([]); // If location can't be resolved, show no fishermen
+        mapElement.style.display = 'none'; // Hide map
+      });
+  }
+
+  // Apply username filter if provided
+  if (usernameInput.value.trim() !== "") {
+    filteredFishermen = filteredFishermen.filter(fisherman =>
+      fisherman.username.toLowerCase().includes(usernameInput.value.toLowerCase())
+    );
+  }
+
+  // Apply budget filter if provided
+  if (budgetInput.value.trim() !== "") {
+    const budget = parseFloat(budgetInput.value);
+    filteredFishermen = knapsack(filteredFishermen, budget); // Use knapsack algorithm
+  }
+
+  // Display filtered fishermen
+  displayFishermen(filteredFishermen);
+
+  // If no fishermen are found, hide the map
+  if (filteredFishermen.length === 0) {
+    mapElement.style.display = 'none';
+  } else {
+    showFishermenOnMap(filteredFishermen); // Show the map with filtered fishermen
+  }
+}
+
+
+
  
    function showFishermenOnMap(fishermen) {
      if (!mapElement || !currentLocation.lat || !currentLocation.lon) return;
@@ -275,7 +292,7 @@ profileContainer.addEventListener('scroll', () => {
      }
  
      mapElement.style.display = 'block';
-     mapInstance = L.map(mapElement).setView([currentLocation.lat, currentLocation.lon], 13);
+     mapInstance = L.map(mapElement).setView([currentLocation.lat, currentLocation.lon], 15);
      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapInstance);
  
      markersLayer = L.markerClusterGroup();
@@ -303,39 +320,45 @@ profileContainer.addEventListener('scroll', () => {
    }
  
    getLocationButton.addEventListener("click", function() {
-     if (navigator.geolocation) {
-         watchID = navigator.geolocation.watchPosition(function(position) {
-             currentLocation.lat = position.coords.latitude;
-             currentLocation.lon = position.coords.longitude;
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        // Store the user's current location
+        currentLocation.lat = position.coords.latitude;
+        currentLocation.lon = position.coords.longitude;
+  
+        const geocodeUrl = `https://nominatim.openstreetmap.org/reverse?lat=${currentLocation.lat}&lon=${currentLocation.lon}&format=json`;
+  
+        fetch(geocodeUrl)
+          .then(response => response.json())
+          .then(data => {
+            const locationName = data.display_name || "Unknown location";
+            locationInput.value = locationName;
+  
+            // Filter the fishermen based on the updated location
+            filterFishermen(); // This will use the updated location
+          })
+          .catch(error => {
+            console.error("Error in geocoding:", error);
+            locationInput.value = "Unable to determine location"; 
+          });
+      }, function(error) {
+        alert("Unable to retrieve your location. Error: " + error.message);
+      });
+    } else {
+      alert("Geolocation is not supported by your browser.");
+    }
+  });
+  
+  
+  
  
-             const geocodeUrl = `https://nominatim.openstreetmap.org/reverse?lat=${currentLocation.lat}&lon=${currentLocation.lon}&format=json`;
- 
-             fetch(geocodeUrl)
-                 .then(response => response.json())
-                 .then(data => {
-                     const locationName = data.display_name || "Unknown location";
-                     locationInput.value = locationName;  
-                     filterFishermen(); 
-                 })
-                 .catch(error => {
-                     console.error("Error in geocoding:", error);
-                     locationInput.value = "Unable to determine location"; 
-                 });
- 
-         }, function(error) {
-             alert("Unable to retrieve your location. Error: " + error.message);
-         });
-     } else {
-         alert("Geolocation is not supported by your browser.");
-     }
- });
- 
+window.onload = function() {
+  fetchFishermen();
+  updateDashboardStats();
+};
    locationInput.addEventListener("input", filterFishermen);
    usernameInput.addEventListener("input", filterFishermen);
    budgetInput.addEventListener("input", filterFishermen);
- 
-   fetchFishermen();
-   updateDashboardStats();
  
    document.getElementById('logout-button').addEventListener('click', logout);
    async function logout() {
@@ -478,7 +501,3 @@ function computeSustainableImpact() {
     document.getElementById('sustainableImpact').textContent = '0%';
   }
 }
-
-
-  // Initial data load
-  updateDashboardStats();
