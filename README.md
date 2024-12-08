@@ -81,7 +81,7 @@ With LAKAYA, you’re not just investing in fishing but in the future of sustain
 ### <a name="prereqs"></a>
 ## Prerequisites ⚓
 🔻***Install Modules*** : 
-<pre><code>npm install package.json</code></pre>
+<pre><code>npm install</code></pre>
 🔻***Run Server*** : 
 <pre><code>node project.js</code></pre>
 	
