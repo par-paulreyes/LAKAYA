@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../public/css/booking.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="../public/index.html"><img src="https://i.ibb.co/QjkPzcn/Blue-Grey-Bold-Fish-Market-Logo-3.png" alt="Logo"></a>
+    </div>
+  </nav>    
+
+  <div class="container">
+    <div class="left-side">
+        <div id="map"></div>
+    </div>
+
+    <div class="booking-details">
+        <h1>Book Invesment</h1>
+        <span id="userEmail"></span>
+        <span id="userName"></span>
+        <p><strong>Name:</strong> <span id="fishermanName">Loading...</span></p>
+        <p><strong>Location:</strong> <span id="fishermanLocation">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="fishermanEmail">Loading...</span></p>
+        <p><strong>Investment Description:</strong> <span id="investmentDescription">Loading...</span></p>
+        <p><strong>Fishing Type:</strong> <span id="fishermanFishingType">Loading...</span></p>
+        <p><strong>Fish Type:</strong> <span id="fishermanFishType">Loading...</span></p>
+        <p><strong>Cut:</strong> <span id="fishermanCut">Loading...</span></p>
+        <p><strong>Target:</strong> <span id="fishermanTarget">Loading...</span></p>
+        <p><strong>Profit:</strong> <span id="fishermanProfit">Loading...</span></p>
+       
+        <div class="investment-row">
+            <input type="date" id="investmentDate" placeholder="Book Date" required>
+            <button id="investBtn">Book</button>
+        </div>
+
+</div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../public/scripts/booking.js"></script>
+</body>
+</html>

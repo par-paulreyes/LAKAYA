@@ -1,0 +1,207 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+   }
+   .cinzel-decorative-regular {
+font-family: "Cinzel Decorative", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.cinzel-decorative-bold {
+font-family: "Cinzel Decorative", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.cinzel-decorative-black {
+font-family: "Cinzel Decorative", serif;
+font-weight: 900;
+font-style: normal;
+}
+.josefin-sans-text {
+font-family: "Josefin Sans", serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+
+
+ body { 
+   font-family: "Josefin Sans", serif;
+   background-color: #DCF2F1; /* Light shade for background */
+ color: #4A628A; /* Darker shade for text */
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+   }
+
+       .navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 32px 20px;
+ background: linear-gradient(135deg, #2c698d, #34314a);
+ color: #4A628A; /* Dark text for contrast */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ z-index: 1000; /* Add a high z-index to the navbar */
+ position: relative; /* Ensure it stays in place */
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ margin-bottom: 4em;
+}
+
+.navbar .logo {
+ display: inline-block;
+ width: 30px;
+ height: 30px;
+ display: flex;
+ align-items: center;
+}
+
+.navbar .logo img {
+ width: 220px;
+ height: 220px;
+}
+
+
+.container {
+display: flex;
+object-fit: cover;
+justify-content: space-between;
+align-items: center;
+margin-top:auto;
+margin:auto;
+max-width: 1200px;
+width: 50%;
+height: 70%;
+background-color: #b9e5e800;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.left-side {
+flex: 1;
+padding: 40px;
+background: linear-gradient(-135deg,  #2c698d,  #34314a);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+overflow: hidden;
+}
+.left-side img {
+width: 110%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+margin-left: 30px;
+}
+
+.right-side {
+flex: 1;
+padding: 40px;
+background: linear-gradient(135deg, #2c698d, #34314a);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+overflow: hidden;
+
+}
+
+
+/* Heading Styles */
+.right-side h1 {
+font-family: "Cinzel Decorative", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2.5rem;
+color: #fff;
+margin-bottom: 20px;
+text-align: center;
+
+}
+
+/* Form Layout */
+.form-group {
+margin-bottom: 15px;
+width: 100%;
+}
+
+/* Label Styles */
+label {
+font-size: 1rem;
+margin-bottom: 3px;
+display: block;
+color: #fff;
+}
+
+/* Input Styles */
+input {
+width: 100%;
+padding: 10px;
+font-size: 1rem;
+margin-top: 3px;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+
+/* Button Styles */
+button {
+padding: 15px 30px;
+background-color: #4A628A;
+color: white;
+justify-content: center;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+margin-top: 10px;
+width: 100%;
+}
+
+button:hover {
+background-color: #3A4C6A;
+}
+
+button:focus {
+outline: none;
+}
+
+/* Register Link Style */
+.register-link {
+color: #ffffff;
+text-decoration: none;
+margin-top: 10px;
+}
+
+p {
+color: #ffffff;
+text-decoration: none;
+margin-top: 15px;
+font-weight: 300;
+}
+
+.register-link:hover {
+text-decoration: underline;
+}
+
+/* Make the form responsive on smaller screens */
+@media (max-width: 768px) {
+.form-container {
+ grid-template-columns: 1fr; /* Stacks the form fields in a single column */
+}
+
+button {
+ width: auto; /* Adjust button width on smaller screens */
+}
+}

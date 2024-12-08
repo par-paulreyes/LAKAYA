@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fisherman Registration</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../public/css/fishermen.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="../public/index.html"><img src="https://i.ibb.co/QjkPzcn/Blue-Grey-Bold-Fish-Market-Logo-3.png" alt="Logo"></a>
+        
+    </div>
+    </div>  
+</nav>
+
+  <div class="container">
+    <!-- Left side with map -->
+    <div class="left-side">
+        <div id="map"></div>
+    </div>
+
+    <!-- Right side with form -->
+    <div class="form-container">
+        <h1>Fisherman Registration</h1>
+        <form id="registerForm">
+          
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role" value="Fisherman" readonly />  
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" required /><br><br>
+
+      <label for="location">Location: </label>
+      <div class="input-wrapper">
+        <input type="text" id="location" name="location" required />
+        <img src="https://i.ibb.co/tqh5qpg/location.png" id="currentlocation" alt="Get Current Location" />
+    </div>
+      <label for="target">Investment Target:</label>
+      <input type="text" id="target" name="target" required /><br><br>
+
+      <label for="cut">Investor Cut:</label>
+      <input type="text" id="cut" name="cut" required /><br><br>
+
+      <label for="descriptions">Investment Description:</label>
+      <input type="text" id="descriptions" name="descriptions" required /><br><br>
+
+      <label for="type">Fishing Method:</label>
+      <select id="type" name="type">
+        <option value="traditional">Traditional</option>
+        <option value="aquaculture">Aquaculture</option>
+      </select><br><br>
+
+      <label for="fish">Type of Fish:</label>
+      <input type="text" id="fish" name="fish" required /><br><br>
+      
+      <label for="email"></label>
+      <input type="hidden" id="email" name="email" required readonly />
+
+      <label for="role"></label>
+      <input type="hidden" id="role" name="role" value="Fisherman" readonly />
+
+      <label for="latitude"></label>
+      <input type="hidden" id="latitude" name="latitude" readonly />
+
+      <label for="longitude"></label>
+      <input type="hidden" id="longitude" name="longitude" readonly />
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="../public/scripts/fishermen.js"></script>
+</body>
+</html>

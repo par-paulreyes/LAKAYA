@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fisherman Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.default.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../public/css/index.css">
+</head>
+<body>
+
+ <!-- Navbar -->
+ <nav class="navbar">
+  <div class="logo">
+      <img src="https://i.ibb.co/QjkPzcn/Blue-Grey-Bold-Fish-Market-Logo-3.png" alt="Logo">
+  </div>
+  <div class="nav-links">
+      <a href="#hero">HOME</a>
+      <a href="#dashboard">DASHBOARD</a>
+      <a href="#how-it-works">HOW IT WORKS</a>
+      <a href="#feedback">FEEDBACK</a>
+      <a href="../public/fishermen.html">BE A FISHERMAN</a>
+  </div>
+  <div class="profile-icon">
+      <img src="https://i.ibb.co/0Qcz1Ns/Blue-Grey-Bold-Fish-Market-Logo-2.png" alt="Profile Icon">
+  </div>
+  <!-- Profile Popup -->
+<div class="profile-popup">
+  <div class="profile-icon" id="profileIcon"></div>
+<ul>
+     <!-- Profile Icon -->
+    <li><a href="../public/account.html">Profile</a></li>
+    <li><a href="../public/register.html">Register</a></li>
+    <li><a href="../public/login.html">Log In</a></li>
+    <li id="logout-button"><a>Log Out</a></li>
+</div>
+</nav>
+
+<section id="hero" class="section">
+  <div class="main-content">
+    <h1>Smart Nets, Smarter Bets</h1>
+    <p>Empowering Fishermen with Algorithm-Driven Investment Strategies</p>
+    <div class="search">
+      <div class="search-bar-container">
+        <input class="search-bar" type="text" id="usernameInput" placeholder="Search by username" />
+      </div>
+      <div class="search-bar-container">
+        <input class="search-bar" type="text" id="locationInput" placeholder="Search by location" />
+        <img src="https://i.ibb.co/tqh5qpg/location.png " alt="LocationBtn" id="getLocationButton"/>
+      </div>
+      <input type="number" id="budgetInput" placeholder="Enter your budget" />
+    </div>
+  </div>
+</section>
+<section id="fishermen-profiles" class="section">
+  <h2>MEET OUR SUSTAINABLE FISHERMEN!</h2>
+  <div id="map"></div>
+  <div class="profile-container-wrapper">
+      <button class="slider-button left" onclick="scrollLeft()">⮜</button>
+      <div class="profile-container">
+          <div class="fishermen-item" id="fishermenList">
+              <!-- Cards are dynamically added here -->
+          </div>
+      </div>
+      <button class="slider-button right" onclick="scrollRight()">⮞</button>
+  </div>
+</section>
+<!-- Dashboard Section -->
+<section id="dashboard">
+  <h2>DASHBOARD</h2>
+  <p>Weekly Track of LAKAYA</p> 
+  <div class="dashboard-container">
+      <div class="stat-box">
+        <div class="icon">👥</div>
+          <h3>Number of Users</h3>
+          <div id="userCount" class="stat-value">Loading...</div>
+          <div class="stat-detail">Active users this week</div>
+      </div>
+      <div class="stat-box">
+        <div class="icon">💰</div>
+          <h3>Number of Investments</h3>
+          <div id="investmentCount" class="stat-value">Loading...</div>
+          <div class="stat-detail">Contributing to projects</div>
+      </div>
+      <div class="stat-box">
+        <div class="icon">🐟</div>
+          <h3>Number of Fishermen</h3>
+          <div id="fishermanCount" class="stat-value">Loading...</div>
+          <div class="stat-detail">Engaged in the program</div>
+      </div>
+      <div class="stat-box">
+        <div class="icon">🌍</div>
+          <h3>Sustainable Impacts</h3>
+          <div id="sustainableImpact" class="stat-value">Loading...</div>
+          <div class="stat-detail">Improvement in marine sustainability</div>
+      </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works">
+  <div class="steps-container">
+      <div class="section-header">
+          <h2>HOW IT WORKS</h2>
+          <p>Learn how to connect, invest, and grow with the best fishermen.</p>
+      </div>
+      <div class="steps-timeline">
+          <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                  <h3 class="step-title">Register or Login</h3>
+                  <p class="step-description">Create an account to get started.</p>
+              </div>
+          </div>
+          <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                  <h3 class="step-title">Input Your Location</h3>
+                  <p class="step-description">Provide your location to find nearby fishermen.</p>
+              </div>
+          </div>
+          <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                  <h3 class="step-title">Input Your Budget</h3>
+                  <p class="step-description">Enter how much you want to invest.</p>
+              </div>
+          </div>
+          <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                  <h3 class="step-title">Invest in a Fisherman</h3>
+                  <p class="step-description">Choose a fisherman and confirm your investment.</p>
+              </div>
+          </div>
+          <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                  <h3 class="step-title">Schedule Your Visit</h3>
+                  <p class="step-description">Book a date to visit the fisherman.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</section>
+<section id="feedback-and-about">
+  <div class="container">
+    <!-- Left side: Feedback Form -->
+    <div id="feedback" class="left-side">
+      <h2>FEEDBACK</h2>
+      <form id="feedback-form">
+        <label for="name">Name</label>
+        <div class="input-group">
+          <input type="text" id="name" name="name">
+        </div>
+        <label for="email">Email</label>
+        <div class="input-group">
+          <input type="email" id="email" name="email" >
+        </div>
+        <label for="message">Message</label>
+        <div class="input-group">
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right side: About Our Team -->
+    <div id="about" class="right-side">
+      <img src="https://i.ibb.co/FmbXL57/eaSS-3.png" alt="Our Team" class="about-image">
+      <div class="about-description">
+        <h3>DE JOSE 𝜗𝜚 EDURIA 𝜗𝜚 REYES</h3>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Footer -->
+ <footer>
+     <p>© 2024 Project Lakaya. All rights reserved.</p>
+ </footer>
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+ <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+ <script src="../public/scripts/index.js"></script>
+</body>
+</html>

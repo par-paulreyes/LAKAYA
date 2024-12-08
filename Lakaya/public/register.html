@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/register.css">
+</head>
+<body>
+    <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">
+        <a href="../public/index.html"><img src="https://i.ibb.co/QjkPzcn/Blue-Grey-Bold-Fish-Market-Logo-3.png" alt="Logo"></a>
+    </div>
+    
+  
+  </nav>
+  <div class="container">
+  <!-- Left Side (Optional for Background Image/Content) -->
+  <div class="left-side">
+    <img src="https://i.ibb.co/khhhKYs/asset6.jpg" id="image" alt="Background" />
+      <!-- You can add an image or any content here -->
+  </div>
+
+  <!-- Right Side (Form Area) -->
+  <div class="right-side">
+      <h1>Registration</h1>
+      <form id="registerForm">
+        <!-- Name Input -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      
+          <!-- Email Input -->
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <!-- Password Input -->
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          
+          <!-- Submit Button -->
+          <button type="submit" class="btn">Login</button>
+
+            <!-- Link to Register Page -->
+            <p>Already have an account? <a href="../public/login.html" class="register-link"> Login</a></p>
+
+      </form>
+  </div>
+</div>
+<script src="../public/scripts/register.js"></script>
+</body>
+</html>

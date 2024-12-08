@@ -1,0 +1,205 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+   }
+   .cinzel-decorative-regular {
+font-family: "Cinzel Decorative", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.cinzel-decorative-bold {
+font-family: "Cinzel Decorative", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.cinzel-decorative-black {
+font-family: "Cinzel Decorative", serif;
+font-weight: 900;
+font-style: normal;
+}
+.josefin-sans-text {
+font-family: "Josefin Sans", serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+
+
+body { 
+   font-family: "Josefin Sans", serif;
+   background-color: #DCF2F1; /* Light shade for background */
+ color: #4A628A; /* Darker shade for text */
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+   }
+
+   .navbar {
+ display: flex;
+ justify-content: space-between; /* Spreads logo, links, and profile icon */
+ align-items: center;
+ padding: 32px 20px;
+ background: linear-gradient(135deg, #2c698d, #34314a);
+ color: #4A628A; /* Dark text for contrast */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ z-index: 1000;
+ position: relative;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ margin-bottom: 5em;
+}
+
+.navbar .logo {
+ display: inline-block;
+ width: 30px;
+ height: 30px;
+ display: flex;
+ align-items: center;  
+}
+
+.navbar .logo img {
+ width: 220px;
+ height: 220px;
+}
+
+.container {
+ display: flex;
+   object-fit: cover;
+   justify-content: space-between;
+   align-items: center;
+   margin-top:auto;
+   margin:auto;
+   max-width: 1200px;
+   width: 60%;
+   height: 70%;
+   background-color: #b9e5e800;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-left: 320px;
+   overflow-x: hidden;
+}
+
+.left-side {
+flex: 1;
+ padding: 40px;
+ background: linear-gradient(-135deg,  #2c698d,  #34314a);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ overflow: hidden;
+}
+
+#map {
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ border-radius: 10px;
+}
+
+.form-container {
+ flex: 1;
+ padding: 40px;
+ background: linear-gradient(135deg, #2c698d, #34314a);
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start; /* Aligns items from the top */
+ align-items: center;
+ height: 100%;
+ box-sizing: border-box;
+ overflow-x: hidden;
+}
+
+h1 {
+ font-family: "Cinzel Decorative", serif;
+ font-weight: 400;
+ font-size: 2rem;
+ margin-bottom: 20px;
+ color: #fff;
+ text-align: center; /* Center the title text */
+}
+
+label {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+ font-size: 1rem;
+ margin-bottom: 5px;
+ color: #fff;
+}
+
+input, select {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 20px;
+ border-radius: 5px;
+ border: 1px solid #ddd;
+ font-size: 1rem;
+}
+/* Wrapper for input and icon */
+.input-wrapper {
+ position: relative; /* Establish a relative positioning context */
+ width: 100%; /* Ensure it matches input width */
+}
+
+#location {
+ width: 100%;
+ padding-right: 40px; /* Add space for the icon */
+ box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#currentlocation {
+ position: absolute;
+ top: 30%; /* Center vertically */
+ right: 10px; /* Spacing from the right edge */
+ transform: translateY(-50%); /* Align icon center with input vertically */
+ width: 35px; 
+ height: 35px;
+ cursor: pointer;
+ transition: transform 0.2s ease-in-out;
+}
+
+#currentlocation:hover {
+ transform: translateY(-50%) scale(1.1); /* Slight zoom effect on hover */
+}
+
+button {
+ padding: 10px 20px;
+ background-color: #4A628A;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 1rem;
+ width: 100%; /* Make button fill the width */
+}
+
+
+button:hover {
+ background-color: #3A4C6A;
+}
+
+button:focus {
+ outline: none;
+}
+
+@media (max-width: 768px) {
+ .container {
+     flex-direction: column;
+     height: auto;
+     width: 100%;
+     margin-left: 0;
+ }
+
+ .form-container {
+     width: 100%;
+     padding: 20px;
+ }
+}

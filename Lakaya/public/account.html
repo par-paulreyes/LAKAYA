@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/account.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="https://i.ibb.co/QjkPzcn/Blue-Grey-Bold-Fish-Market-Logo-3.png" alt="Logo"></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="profile-container">
+      <!-- Profile section now at the top -->
+      <div class="profile-section">
+        <div class="profile-icon">
+          <i class="ri-user-line"></i>
+        </div>
+        <h1 id="user-name">John Doe</h1>
+        <div class="profile-details">
+          <p><strong>Email:</strong> <span id="user-email">john.doe@example.com</span></p>
+        </div>
+        <a href="#" id="logout-button" class="logout-btn">Logout</a>
+      </div>
+
+      <!-- Investment section below profile -->
+      <div class="investment-section">
+        <h2>Investment Details</h2>
+        <table id="investment-table" class="investment-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Location</th>
+              <th>Target</th>
+              <th>Profit</th>
+              <th>Investment Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="investment-table-body">
+            <!-- Investment rows will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <p id="no-investment-message">No investments available.</p>
+      </div>
+    </div>
+  </div>
+<script src="../public/scripts/account.js"></script>
+</body>
+</html>
