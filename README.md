@@ -101,7 +101,6 @@ The LAKAYA platform is architected to seamlessly connect fishermen and investors
 - **Technology**: Node.js with Express.js  
 - **Purpose**: Provides RESTful APIs for communication.  
 - **Features Implemented**:
-  - **Authentication**: JWT-based login/registration.
   - **CRUD Operations**:
     - Create and manage fishermen profiles.
     - Manage investments and bookings.
