@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Purpose](#purpose)
+- [Project Architecture](#architecture)
 - [Prerequisites](#prereqs)
 - [Member Portfolio](#members)
 
@@ -75,6 +76,63 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 With LAKAYA, you’re not just investing in fishing but in the future of sustainable communities and marine ecosystems. Join us and become part of this transformative journey.
 
 </div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
+
+### <a name="architecture"></a>
+## Project Architecture 🏗️
+### Overview  
+The LAKAYA platform is architected to seamlessly connect fishermen and investors through a highly interactive, scalable, and intuitive web application. It incorporates modern technologies and algorithms to ensure a robust and user-centric experience.
+
+### **Frontend (User Interface)**  
+- **Technologies**: HTML, CSS, JavaScript  
+- **Purpose**: Builds a responsive, intuitive UI for diverse devices.  
+- **Pages**:
+  - Homepage
+  - Investment Page
+  - Be a Fisherman Page
+  - Fisherman and Investor Profiles
+  - Login and Register Page
+- **Integration**:
+  - **Map-Based Filtering**: Location search using the Haversine formula.
+  - **Budget-Based Filtering**: Algorithmically ranks fishermen (Knapsack algorithm).
+
+### **Backend (Business Logic)**  
+- **Technology**: Node.js with Express.js  
+- **Purpose**: Provides RESTful APIs for communication.  
+- **Features Implemented**:
+  - **Authentication**: JWT-based login/registration.
+  - **CRUD Operations**:
+    - Create and manage fishermen profiles.
+    - Manage investments and bookings.
+  - **Algorithms**:
+    - Knapsack algorithm for budget optimization.
+    - Haversine formula for location-based search.
+
+### **Database**  
+- **Technology**: Firebase - Firestore
+- **Purpose**: Stores structured data for:
+  - User profiles
+  - Fisherman information (name, location, fishing method, capacity, fish type, etc.)
+  - Investment and booking records.
+
+### **Integration Features**  
+- **Map Services**: Integrated via third-party APIs for geolocation-based searches.  
+- **Email Notifications**: Confirmations for bookings and investments.  
+- **Admin Dashboard**: Analytics for user growth and sustainable impact.
+
+### **Algorithms**  
+- **Haversine Formula**: Calculates the shortest distance to fishermen based on user location.  
+- **Knapsack Algorithm**: Matches fishermen to investors by maximizing sustainable impact under budget constraints.
+
+### **Technology Stack**  
+| **Layer**          | **Technology**         |
+|---------------------|------------------------|
+| Frontend           | HTML, CSS, JavaScript  |
+| Backend            | Node.js with Express.js|
+| Database           | Firebase - Firestore  |
+| Map Services       | leaflet               |
+| Algorithms         | Knapsack, Haversine   |
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
