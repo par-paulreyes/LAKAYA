@@ -24,18 +24,20 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 ### <a name="features"></a>
 ## Features 🌐
 <div align="justify">
-	
-<li> <strong>Login/Register:</strong> Seamless onboarding for users.</li>
-<li> <strong>Profile:</strong> A personal dashboard for managing activities.</li>
-<li> <strong>Be a Fisherman:</strong> A dedicated section for fishermen to register and showcase their practices.</li>
-<li> <strong>Map-Based Search:</strong> Utilize location-based filtering with Haversine theory to find nearby fishermen upon entering your current location.</li>
-<li> <strong>Budget-Based Search:</strong> Maximize budget, using the Knapsack algorithm to filter fishermen, display the best options tailored to your needs.</li>
-<li> <strong>Filtered Results:</strong> View the list of fishermen matching your search criteria, with details such as name, location, and investment cost.</li>
-<li> <strong>Investment Process:</strong> After finding a fisherman, investors can proceed to the Investment Page to book visits.</li>
 <li> <strong>Dashboard:</strong> Gain insights into platform metrics, including Total users, fishermen, investors, and sustainable impact.</li>
 <li> <strong>How It Works:</strong> A step-by-step guide for using LAKAYA, making it easy for new users to navigate the platform and get started.</li>
 <li> <strong>Feedback:</strong> Share experiences and suggestions to help us improve and foster a stronger community.</li>
-<li> <strong>About Us:</strong> Learn more about LAKAYA’s mission, vision, and commitment to sustainable development.</li>
+<img src="https://i.ibb.co/nDVDnQG/1.png"><br><br>
+<li> <strong>Map-Based Search:</strong> Utilize location-based filtering with Haversine theory to find nearby fishermen upon entering your current location.</li>
+<li> <strong>Budget-Based Search:</strong> Maximize budget, using the Knapsack algorithm to filter fishermen, display the best options tailored to your needs.</li>
+<li> <strong>Filtered Results:</strong> View the list of fishermen matching your search criteria, with details such as name, location, and investment cost.</li>
+<img src="https://i.ibb.co/hdWM00L/2.png"><br><br>
+<li> <strong>Investment Process:</strong> After finding a fisherman, investors can proceed to the Investment Page to book visits.</li>
+<li> <strong>Login/Register:</strong> Seamless onboarding for users.</li>
+<li> <strong>Be a Fisherman:</strong> A dedicated section for fishermen to register and showcase their practices.</li>
+<img src="https://i.ibb.co/0Ymfn6P/3.png"><br><br>
+<li> <strong>Profile:</strong> A personal dashboard for managing activities.</li>
+<img src="https://i.ibb.co/vJQvp8W/4.png"><br><br>
 
 </div>
 
