@@ -35,7 +35,7 @@ Have you ever considered our seafood's journey before it reaches your table? In 
 <li> <strong>Investment Process:</strong> After finding a fisherman, investors can proceed to the Investment Page to book visits.</li>
 <li> <strong>Login/Register:</strong> Seamless onboarding for users.</li>
 <li> <strong>Be a Fisherman:</strong> A dedicated section for fishermen to register and showcase their practices.</li><br>
-<img src="https://i.ibb.co/0Ymfn6P/3.png"><br><br>
+<img src="https://i.ibb.co/JrmzcGX/3.png"><br><br>
 <li> <strong>Profile:</strong> A personal dashboard for managing activities.</li><br>
 <img src="https://i.ibb.co/vJQvp8W/4.png"><br><br>
 
